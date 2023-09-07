@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Karla", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Colors Link https://coolors.co/646e78-8d98a7-dcccbb-eab464-a7754d */
+:root {
+  --paynes-gray: #646e78ff;
+  --cadet-gray: #8d98a7ff;
+  --dun: #dcccbbff;
+  --earth-yellow: #eab464ff;
+  --chamoisee: #a7754dff;
+}
+
+body {
+  padding: 150px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 500px);
+  grid-template-rows: 150px 300px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.grid-top {
+  background-color: var(--earth-yellow);
+  display: grid;
+}
+
+#titleSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#locationSec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid-bottom {
+  background-color: var(--paynes-gray);
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(4, 25%);
+}
+
+.extraTempDetails {
+  grid-row-start: -1;
+  grid-row-end: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5px;
+  background-color: var(--dun);
+}
+
+.icon {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#idtempDtlAll {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tempDtl {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.weatherBtn {
+  background-color: var(--paynes-gray);
+  color: white;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.weatherBtn:hover {
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-color: gray;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+  color: rgb(34, 33, 33);
+}
